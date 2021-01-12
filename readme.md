@@ -2,6 +2,10 @@
 
 ![image showing signs' traits and categories](./zodiac.jpeg)
 
+## Pre-reqs
+* node/express/ejs/express-ejs-layouts (for part 1)
+* controllers (for part 2)
+
 ## Part 1: EJS & EJS Layouts
 
 * fork & clone this repo
