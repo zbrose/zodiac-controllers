@@ -32,6 +32,10 @@
 
 ## Part 2: Controllers
 
+* Add the following routes to your app.
+* Organize the routes into controllers based on category (your controllers folder should have four files in it, one for each category).
+* Verify that all routes work as described in table!
+
 | URL Pattern  | Content |
 | ------------- | ------------- |
 | /water/cancer | image of cancer symbol  |
