@@ -1,0 +1,19 @@
+<h5><%= element %></h5>
+
+<h6>Signs</h6>
+
+<ul>
+<% signs.forEach(sign => { %>
+  <li>
+    <a href="/<%= urlPrefix %>/<%= sign.toLowerCase() %>"><%= sign %></a>
+  </li>
+<% }) %>
+</ul>
+
+<h6>Traits</h6>
+
+<ul>
+<% traits.forEach(trait => { %>
+  <li><%= trait %></li>
+<% }) %>
+</ul>
