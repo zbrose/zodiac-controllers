@@ -1,13 +1,1 @@
-<h2>Water Traits</h2>
-
-<ul>
-    <% waterSigns.forEach(sign=>{ %>
-        <li> <%=sign%> </li>
-    <% }) %>
-</ul>
-
-<ul>
-    <% waterTraits.forEach(trait=>{ %>
-        <li> <%=trait%> </li>
-    <% }) %>
-</ul>
+<%- include('common/element.ejs'),{ element, signs, traits}%>

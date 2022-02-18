@@ -1,13 +1,1 @@
-<h2>Air Traits</h2>
-
-<ul>
-    <% airSigns.forEach(sign=>{ %>
-        <li> <%=sign%> </li>
-    <% }) %>
-</ul>
-
-<ul>
-    <% airTraits.forEach(trait=>{ %>
-        <li> <%=trait%> </li>
-    <% }) %>
-</ul>
+<%- include('common/element.ejs'),{ element, signs, traits}%>

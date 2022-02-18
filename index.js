@@ -11,24 +11,37 @@ app.get('/',(req,res)=>{
     res.render('index.ejs')
 })
 app.get('/water',(req,res)=>{
-    const waterSigns = ['Pisces','Cancer','Scorpio']
-    const waterTraits = ['private','mysterious','psychic','charming','emoitional','sensitive']
-    res.render('water.ejs', {waterSigns,waterTraits})
+
+    res.render('water.ejs', {
+        element: 'Water',
+        signs: ['Pisces','Cancer','Scorpio'],
+        traits: ['private','mysterious','psychic','charming','emoitional','sensitive']
+    })
 })
 app.get('/air',(req,res)=>{
-    const airSigns = ['Aquarius','Gemini','Libra']
-    const airTraits = ['movement','creativity','action','adventure','exciting','easily provoked']
-    res.render('air.ejs',{airTraits,airSigns})
+    
+    res.render('air.ejs',{
+        element: 'Air',
+        signs: ['Aquarius','Gemini','Libra'],
+        traits: ['movement','creativity','action','adventure','exciting','easily provoked']
+    })
 })
 app.get('/fire',(req,res)=>{
-    const fireSigns = ['Aires','Leo','Sagittarius']
-    const fireTraits = ['passionate','strong emotions','temperamental','energetic','interesting']
-    res.render('fire.ejs',{fireSigns, fireTraits})
+
+    res.render('fire.ejs',{
+        element: 'Fire',
+        signs: ['Aires','Leo','Sagittarius'],
+        traits: ['passionate','strong emotions','temperamental','energetic','interesting']
+    })
 })
+
 app.get('/earth',(req,res)=>{
-    const earthSigns = ['Taurus','Virgo','Capricorn']
-    const earthTraits = ['grounded','helpful','practical','realistic','materialistic','dependable']
-    res.render('earth.ejs',{earthSigns,earthTraits})
+
+    res.render('earth.ejs',{
+        element: 'Earth',
+        signs: ['Taurus','Virgo','Capricorn'],
+        traits: ['grounded','helpful','practical','realistic','materialistic','dependable']
+    })
 })
 
 

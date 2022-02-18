@@ -1,13 +1,1 @@
-<h2>Earth Traits</h2>
-
-<ul>
-    <% earthSigns.forEach(sign=>{ %>
-        <li> <%=sign%> </li>
-    <% }) %>
-</ul>
-
-<ul>
-    <% earthTraits.forEach(trait=>{ %>
-        <li> <%=trait%> </li>
-    <% }) %>
-</ul>
+<%- include('common/element.ejs'),{ element, signs, traits}%>
